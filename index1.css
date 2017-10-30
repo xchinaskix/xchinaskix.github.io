@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    -webkit-transform: all .3s;
+    -moz-transform: all .3s;
+    -ms-transform: all .3s;
+    -o-transform: all .3s;
+    transform: all .3s;
+}
+.top-grey-menu{
+    background-color: #ededed;
+    font-family: 'Hind Regular', sans-serif;
+    color: #565655;
+    height: 60px;
+}
+.top-grey-menu>div{
+    display: inline-block;
+    padding-top:  20px;
+}
+.top-white-menu>div{
+    display: inline-block;
+}
+.subtitles>div{
+    display: inline-block;
+    padding: 0px 0px 0px 40px;
+}
+.social-links{
+    float: right;
+}
+.social-links>a{
+    padding: 0px 7px;
+}
+.phone-number>span{
+    color: black;
+    font-family: 'Hind Bold', sans-serif;
+}
+.title{
+    font-family: 'Hind Bold', sans-serif;
+}
+.subtitle{
+    color: #7a7a7a;
+    font-family: 'Hind Regular', sans-serif;
+}
+.city-select{
+    padding-left: 150px;
+}
+.phone-number{
+      padding-left: 55px;
+}
+.adress{
+    padding-left: 15px;
+}
+.logo{
+    padding: 30px 130px;
+}
+.subtitles{
+    position: absolute;
+    top 20px;
+    padding: 46px 0px 0px 255px;
+}
+
+.menu {
+    font-size: 16px;
+    font-family: "DharmaGothicE";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 0.75;
+    text-align: left;
+    position: absolute;
+    left: 128.37px;
+    top: 218.546px;
+    z-index: 17;
+
+}
+.search{
+    float: right;
+}
+
