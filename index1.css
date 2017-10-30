@@ -64,18 +64,10 @@ a{
 }
 
 .menu {
-    font-size: 16px;
-    font-family: "DharmaGothicE";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-    line-height: 0.75;
-    text-align: left;
-    position: absolute;
-    left: 128.37px;
-    top: 218.546px;
-    z-index: 17;
+    background-color: #000000;
+    font-family: 'DharmaGothicE', sans-serif;
+    color: white;
+    height: 80px;
 
 }
 .search{
