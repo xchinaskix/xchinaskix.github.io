@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 400 14px/1.5 "Hind", sans-serif;
+    color: #565655;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+a:hover{
+    color: #bd2631;
+}
+/* header */
+/*block1*/
+.contact-info {
+    background: #ededed;
+    padding: 19px 105px;
+}
+.social-links{
+    float: right;
+    padding-top: 10px;
+}
+.contact-info div{
+    display: inline-block;
+    margin-right: 83px;
+}
+.social-links a{
+    margin-left: 15px;
+}
+.fa-phone, .fa-location-arrow{
+    color: #000000;
+}
+.city{
+    background: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.fa-angle-down{
+    margin-left: 15px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+/*block2*/
+.logo-menu{
+    padding:16px 105px ;
+    background: #ffffff;
+}
+.logo-menu div{
+    display: inline-block;
+}
+
+.subtitles{
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px;
+}
+.subtitles div{
+    margin-right: 25px;
+}
+.logo{
+    margin-left: 25px;
+}
+/*block3*/
+.navigation{
+    padding: 20px 105px;
+    background: #000000;
+    color: #ffffff;
+}
+.search{
+    float: right;
+}
+nav li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 24px 16px 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+nav li a:before{
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 0;
+    bottom: 0;
+    background: #bd2631;
+    left: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+nav li a:hover:before {
+    width: 100%;
+    /*border-bottom: 6px solid #bd2631;*/
+}
