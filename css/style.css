@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font: 400 14px/1.5 "Hind", sans-serif;
+    font: 400 16px/1.5 "Hind", sans-serif;
     color: #565655;
 }
 ul{
@@ -28,22 +28,26 @@ a:hover{
 /*block1*/
 .contact-info {
     background: #ededed;
-    padding: 19px 105px;
+    padding: 12px 60px 12px 140px;
 }
 .social-links{
     float: right;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 .contact-info div{
     display: inline-block;
-    margin-right: 83px;
+    margin-right: 20px;
 }
 .social-links a{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .fa-phone, .fa-location-arrow{
     color: #000000;
 }
+.phone span{
+    font: 800 16px "Hind";
+}
+
 .city{
     background: #000000;
     color: #ffffff;
@@ -57,37 +61,48 @@ a:hover{
 }
 /*block2*/
 .logo-menu{
-    padding:16px 105px ;
+    padding:28px 60px 28px 105px ;
     background: #ffffff;
 }
 .logo-menu div{
     display: inline-block;
 }
-
 .subtitles{
     float: right;
     margin-top: 15px;
-    margin-right: 25px;
 }
 .subtitles div{
-    margin-right: 25px;
+    margin-right: 40px;
 }
 .logo{
     margin-left: 25px;
 }
+.title{
+    font: 800 16px "Hind";
+    color: #000000;
+}
 /*block3*/
 .navigation{
-    padding: 20px 105px;
+    padding: 6px 128px;
     background: #000000;
-    color: #ffffff;
+    color: rgba (0,0,0,0.8)
+}
+.nav-menu nav{
+    float: left;
+    padding-top: 5px;
 }
 .search{
     float: right;
+    padding-top: 22px;
+    color: #ffffff;
+}
+.navigation div{
+    display: inline-block;
 }
 nav li a {
     color: #fff;
     font-size: 16px;
-    padding: 24px 16px 16px;
+    padding: 20px 15px 14px;
     display: inline-block;
     text-transform: uppercase;
     position: relative;
@@ -95,7 +110,7 @@ nav li a {
 nav li a:before{
     content: '';
     position: absolute;
-    height: 7px;
+    height: 4px;
     width: 0;
     bottom: 0;
     background: #bd2631;
@@ -108,5 +123,4 @@ nav li a:before{
 }
 nav li a:hover:before {
     width: 100%;
-    /*border-bottom: 6px solid #bd2631;*/
 }
