@@ -89,10 +89,9 @@ window.onload = function () {
                 str += '<div class="email"><p>' + addressBook[n].email + '</p></div>';
                 str += '<div class="delete"><a href="#" class="delbutton" data-id ="' + n + '">Delete</a></div>';
                 str += '</div>';
-                addBookDiv.innerHTML += str;
-            }
+                addBookDiv.innerHTML += str;}
         }
     }
 
     showAdressBook();
-}
+};
