@@ -17,29 +17,31 @@ window.onload = function () {
     //CREATE STORAGE
     var addressBook = [];
 
-    function jSonStructure(firstName, secondName, phone, email){
+    function jSonStructure(firstName, secondName, phone, email) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.phone = phone;
         this.email = email;
-    };
+    }
+
 
     //EVENTLISTENER
-    quickAdd.addEventListener('click', function(){
+    quickAdd.addEventListener('click', function () {
         console.log('button is clicked');
         quickAddFormDiv.style.display = 'inline-block';
     });
-    cancelButton.addEventListener('click', function(){
+    cancelButton.addEventListener('click', function () {
         quickAddFormDiv.style.display = 'none';
     });
     addBookDiv.addEventListener('click', removeEntry);
-    
+
     addButton.addEventListener('click', addtoBook);
 
-    function addtoBook(){
-        var isNull = firstName.value!='' && secondName.value!='' && phone.value!='' && email.value!='';
+
+    function addtoBook() {
+        var isNull = firstName.value != '' && secondName.value != '' && phone.value != '' && email.value != '';
         console.log(isNull);
-        if(isNull){
+        if (isNull) {
             //add the content from the form to arr and local storage
             var obj = new jSonStructure(firstName.value, secondName.value, phone.value, email.value);
             addressBook.push(obj);
@@ -60,8 +62,8 @@ window.onload = function () {
         }
     }
 
-    function removeEntry(event){
-        if(event.target.classList.contains("delbutton")){
+    function removeEntry(event) {
+        if (event.target.classList.contains("delbutton")) {
             var remID = event.target.getAttribute("data-id");
             //remove the JSON entry from the array with the index num = remId
             addressBook.splice(remID, 1);
@@ -70,39 +72,27 @@ window.onload = function () {
             console.log('function must worked');
         }
     }
-    function showAdressBook(){
+
+    function showAdressBook() {
         //check if the key addbook exist in local storage of else create it
         //if it exist, load content from the local storage and loop - display it on the page
-        if (localStorage['addbook'] === undefined){
+        if (localStorage['addbook'] === undefined) {
             localStorage['addbook'] = "[]";
-        }else{
+        } else {
             addressBook = JSON.parse(localStorage['addbook']);
             addBookDiv.innerHTML = '';
-            for (var n in addressBook){
+            for (var n in addressBook) {
                 var str = '<div class="entry">';
-                    str +='<div class="firstName"><p>' +addressBook[n].firstName +'</p></div>';
-                    str +='<div class="secondName"><p>' +addressBook[n].secondName +'</p></div>';
-                    str +='<div class="phone"><p>' +addressBook[n].phone +'</p></div>';
-                    str +='<div class="email"><p>' +addressBook[n].email +'</p></div>';
-                    str +='<div class="delete"><a href="#" class="delbutton" data-id ="' + n +'">Delete</a></div>';
-                    str+='</div>';
-                    addBookDiv.innerHTML += str;
+                str += '<div class="firstName"><p>' + addressBook[n].firstName + '</p></div>';
+                str += '<div class="secondName"><p>' + addressBook[n].secondName + '</p></div>';
+                str += '<div class="phone"><p>' + addressBook[n].phone + '</p></div>';
+                str += '<div class="email"><p>' + addressBook[n].email + '</p></div>';
+                str += '<div class="delete"><a href="#" class="delbutton" data-id ="' + n + '">Delete</a></div>';
+                str += '</div>';
+                addBookDiv.innerHTML += str;
             }
         }
     }
-    showAdressBook();
-   /* var searchInput = document.getElementById('search');
-    searchInput.addEventListener('keydown', function (ele) {
-        console.log(this.value);
-        var lowC = inpSr.value.toLowerCase();
-            for (i in addressBook){
-                if addressBook[i].firstName.(lowC){
-                    addressBook[i].style.display = "none";
-                else{
-                    addressBook[i].style.display = "block";
-                    }
-                }
-            }
-    )}
 
-};*/
+    showAdressBook();
+}
