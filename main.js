@@ -24,6 +24,8 @@ window.onload = function () {
         this.email = email;
     }
 
+    showAdressBook()
+
 
     //EVENTLISTENER
     quickAdd.addEventListener('click', function () {
@@ -92,6 +94,4 @@ window.onload = function () {
                 addBookDiv.innerHTML += str;}
         }
     }
-
-    showAdressBook();
 };
