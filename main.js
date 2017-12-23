@@ -91,7 +91,7 @@ window.onload = function () {
         }
     }
     showAdressBook();
-    var searchInput = document.getElementById('search');
+   /* var searchInput = document.getElementById('search');
     searchInput.addEventListener('keydown', function (ele) {
         console.log(this.value);
         var lowC = inpSr.value.toLowerCase();
@@ -103,6 +103,6 @@ window.onload = function () {
                     }
                 }
             }
-    )};
+    )}
 
-};
+};*/
