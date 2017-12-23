@@ -2,183 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adress Book</title>
+    <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <div class="topblack">
-            <p>THIS IS WHERE THE PROMO BAR WILL APPEAR</p>
+    <div class="countainer">
+        <div>
+            <h1>Adress Book</h1>
+            <input id="search" type="text">
         </div>
-        <div class="bigmenu">
-            <div class="mainmenu">
-                <div class="logo"><img src="img/logo.png"></div>
-                <div class="logo1"><img src="img/amer100%25.png"></div>
-                <div class="menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                    <ul>
-                        <li>HOME</li>
-                        <li>ABOUT US</li>
-                        <li>HOW IT WORKS</li>
-                        <li>SHOP NOW</li>
-                    </ul>
-                </div>
-                <div class="shopcar"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div>
-            </div>
-            <div class="slider">
-                <div id="o1">SWEAT ABSORDING</div>
-                <div id="o2">DISPOSABLE HAT AND HELMET LINERS.</div>
-            </div>
+        <div class="quickadd"><button id="QuickAdd">+ Add</button></div>
+        <div class="QuickAddForm">
+            <label for = "firstName">First Name</label><input type="text" id="firstName" class="formFields">
+            <label for = "secondName">Second Name</label><input type="text" id="secondName" class="formFields">
+            <label for = "phone">Phone Number</label><input type="text" id="phone" class="formFields">
+            <label for = "e-mail">E-mail</label><input type="text" id="e-mail" class="formFields">
+            <br>
+            <button id="Add">Add Now</button><button id="Cancel">Cancel</button>
         </div>
-        <div class="techfeat">
-            <div class="techtext">TECH FEATURES</div>
-            <div class="logos"><img src="img/iconheader.png"></div>
-        </div>
-    </header>
-    <main>
-        <div class="blackst">
-            <div class="blcb"><img src="img/perfomance.png">
-                <div class="txtbl">PERFOMANCE</div>
-            </div>
-            <div class="blcb"><img src="img/hygiene.png">
-                <div class="txtbl">SAFETY</div>
-            </div>
-            <div class="blcb"><img src="img/safety.png">
-                <div class="txtbl">HYGIENE</div>
-            </div>
-
-        </div>
-        <div class="greyst">
-            <div class="textblock">
-                <div class="gm">GAME CHANGER</div>
-                <div class="prt">SWEAT PROTECTION. DELIVIRED</div>
-                <p>KEEPS SWEAT OUT OF YOUR EYES</p>
-                <P>REDUCES FOGGING </p>
-                <P>HELPS PREVENT SWEAT STAINS</P>
-                <P>THIN, SOFT AND LIGHTWEIGHT</P>
-                <P>HELPS WITH ACNE & SKIN IRRITATION</P>
-                <div class="bluea b1">Starting at only</div>
-                <div class="bluea">$4.99 for a 3 pack </div>
-                <div class="greyb">SHOP NOW</div>
-                <div class="greyp"><img src="img/amer100%25bl.png"></div>
-            </div>
-            <iframe src="https://player.vimeo.com/video/155951743" <!--width="900"
-                    height="600" -->frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <div class="whitest">
-            <div class="wtxt">USED BY THE PROS</div>
-            <div class="wimg">
-                <img src="img/awards.png">
-                <img src="img/aema.png">
-                <img src="img/period.png">
-                <img src="img/lacrosse.png">
-                <img src="img/usahockey.png">
-            </div>
-            <div class="wdot">...</div>
-        </div>
-        <div class="insta">
-            <div class="htag">
-                <div><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></div>
-                <div>#NOSWEATCO</div>
-            </div>
-            <div class="photab">
-                <div><img src="img/insta1.png"></div>
-                <div><img src="img/insta2.png"></div>
-                <div><img src="img/insta3.png"></div>
-                <div><img src="img/insta4.png"></div>
-            </div>
-            <div class="photab">
-                <div><img src="img/insta5.png"></div>
-                <div><img src="img/insta6.png"></div>
-                <div><img src="img/insta7.png"></div>
-                <div><img src="img/insta8.png"></div>
+        <div class="addBook">
+            <div class="entry">
+                <div class="firstName"><p>otot</p></div>
+                <div class="secondName"><p>otot</p></div>
+                <div class="phone"><p>otot</p></div>
+                <div class="email"><p>otot</p></div>
+                <div class="delete"><p>delete</p></div>
             </div>
         </div>
-        <div class="colum3">
-            <div class="colums1">
-                <div class="headcol1"><img src="img/amer100%25bl.png"></div>
-                <p>HAT LINERS</p>
-                <div class="footcol1">BUT NOW</div>
-            </div>
-            <div class="colums2">
-                <div class="headcol2"><img src="img/amer100%25bl.png"></div>
-                <p>HELMET LINERS</p>
-                <div class="footcol2">BUT NOW</div>
-            </div>
-            <div class="colums3">
-                <div class="headcol3"><img src="img/amer100%25bl.png"></div>
-                <p>HARD HAT LINERS</p>
-                <div class="footcol3">BUT NOW</div>
-            </div>
-        </div>
-        <div class="fullvideo">
-            <iframe src="https://player.vimeo.com/video/155951743" width="100%"
-                    height="1100px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <div class="whitest2">
-            <div class="wtxt">WE'VE BEEN FEATURED IN</div>
-            <div class="wimg">
-                <img src="img/awards.png">
-                <img src="img/aema.png">
-                <img src="img/period.png">
-                <img src="img/lacrosse.png">
-                <img src="img/usahockey.png">
-            </div>
-            <div class="wdot">...</div>
-        </div>
-    </main>
-    <footer>
-        <div class="topfot">
-            <div class="fot1">
-                <h4>STAY IN THE LOOP</h4>
-                <h6>Get discounts straight to your inbox.</h6>
-                <div class="sendi">
-                    <i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="fot2">
-                <ul>
-                    <li>About us</li>
-                    <li>Become an affiliate</li>
-                    <li>Retail sales Inquiries</li>
-                    <li>Blog</li>
-                    <li>Terms & Privacy Policy</li>
-                </ul>
-            </div>
-            <div class="fot3">
-                <div class="fot3t">
-                    <h4>CONTRACT INFORMATION</h4>
-                    <p>If you have any question about our products, or you want to follow up on your existing order
-                    status, please contact us via the following:</p>
-                </div>
-                <div class="fot3b">
-                    <div class="fot3b1">
-                        <h4>LOCATION: </h4>
-                        <p>5421 Feltl Rd, Suite 160, Minnetonka, MN 55343</p>
-                    </div>
-                    <div class="fot3b2">
-                        <h4>PHONE: </h4>
-                        <p>1 (615) 697-9328</p>
-                    </div>
-                    <div class="fot3b3">
-                        <h4>EMAIL: </h4>
-                        <p>Info@NoSweatCo.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="botfot">
-            <div>&#169;2016 NoSweat. All Right Reserved. - Patented. Other Patents Pending.</div>
-            <div class="iconfoot">
-                <ul>
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
