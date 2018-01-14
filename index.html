@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Adress Book</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="countainer">
-        <div>
-            <h1>Adress Book</h1>
-            <input id="search" type="text">
+        <div class="main">
+            <h2>Adress Book<i class="fa fa-address-book-o" aria-hidden="true"></i></h2>
+            <input id="search" type="text" placeholder="Search...">
         </div>
-        <div class="quickadd"><button id="QuickAdd">+ Add</button></div>
+        <div class="quickadd"><button id="QuickAdd"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add</button></div>
         <div class="QuickAddForm">
             <label for = "firstName">First Name</label><input type="text" id="firstName" class="formFields">
             <label for = "secondName">Second Name</label><input type="text" id="secondName" class="formFields">
             <label for = "phone">Phone Number</label><input type="text" id="phone" class="formFields">
             <label for = "e-mail">E-mail</label><input type="text" id="e-mail" class="formFields">
-            <br>
-            <button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+			<div class="pidoe">
+				<button id="Add">Add Now</button>
+				<button id="Cancel">Cancel</i></button>
+			</div>
         </div>
         <div class="addBook">
             <div class="entry">
@@ -27,7 +33,8 @@
                 <div class="secondName"><p>otot</p></div>
                 <div class="phone"><p>otot</p></div>
                 <div class="email"><p>otot</p></div>
-                <div class="delete"><p>delete</p></div>
+                <div class="edit"><p></p></div>
+				<div class="delete"><p></p></div>
             </div>
         </div>
     </div>

@@ -1,0 +1,49 @@
+*{
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.QuickAddForm{
+    display: flex;
+	border: 1px solid black;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: #c1092e;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.pidoe{
+	display: inline-block;
+	padding-top: 10px;
+}
+.entry {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+	border-bottom: 3px solid black;
+	padding: 0px 15px; 
+}
+.QuickAddForm {
+	display: none;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+#search{
+	width: 40%;
+}
+.quickadd{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+

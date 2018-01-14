@@ -24,18 +24,21 @@ window.onload = function () {
         this.email = email;
     }
 
-    showAdressBook()
+    showAdressBook();
 
 
     //EVENTLISTENER
     quickAdd.addEventListener('click', function () {
         console.log('button is clicked');
-        quickAddFormDiv.style.display = 'inline-block';
+        quickAddFormDiv.style.display = 'flex';
     });
     cancelButton.addEventListener('click', function () {
         quickAddFormDiv.style.display = 'none';
+		clearForm();
     });
     addBookDiv.addEventListener('click', removeEntry);
+	
+	addBookDiv.addEventListener('click', editEntry);
 
     addButton.addEventListener('click', addtoBook);
 
@@ -45,7 +48,7 @@ window.onload = function () {
         console.log(isNull);
         if (isNull) {
             //add the content from the form to arr and local storage
-            var obj = new jSonStructure(firstName.value, secondName.value, phone.value, email.value);
+            var obj = new jSonStructure(firstName.value.toUpperCase(), secondName.value.toUpperCase(), phone.value, email.value);
             addressBook.push(obj);
             localStorage['addbook'] = JSON.stringify(addressBook);
             //hide the form
@@ -74,6 +77,22 @@ window.onload = function () {
             console.log('function must worked');
         }
     }
+	
+	function editEntry(event) {
+        if (event.target.classList.contains("editbutton")) {
+            var remID = event.target.getAttribute("data-id");
+			quickAddFormDiv.style.display = 'flex';
+			console.log('hulk');
+			firstName.value = addressBook[remID].firstName
+			secondName.value = addressBook[remID].secondName
+			phone.value = addressBook[remID].phone
+			email.value = addressBook[remID].email
+			addressBook.splice(remID, 1);
+            localStorage['addbook'] = JSON.stringify(addressBook);
+            showAdressBook();
+		}
+    }
+
 
     function showAdressBook() {
         //check if the key addbook exist in local storage of else create it
@@ -89,9 +108,17 @@ window.onload = function () {
                 str += '<div class="secondName"><p>' + addressBook[n].secondName + '</p></div>';
                 str += '<div class="phone"><p>' + addressBook[n].phone + '</p></div>';
                 str += '<div class="email"><p>' + addressBook[n].email + '</p></div>';
+				str += '<div class="edit"><a href="#" class="editbutton" data-id ="' + n + '">Edit</a></div>';
                 str += '<div class="delete"><a href="#" class="delbutton" data-id ="' + n + '">Delete</a></div>';
                 str += '</div>';
                 addBookDiv.innerHTML += str;}
         }
     }
+			$(document).ready(function() {
+				$('#search').on('keyup', function() {
+				var oko = $(this).val().toUpperCase();
+				$('.entry').find('.firstName').parent().show()
+				$('.entry').find('.firstName').parent().not(':contains('+oko+')').hide()
+		  });
+		});
 };
